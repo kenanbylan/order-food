@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCollectionViewCell" id="gTV-IL-0wX" customClass="CategoryCollectionViewCell" customModule="OrderFood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="65"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oob-wR-KX9" customClass="CardView" customModule="OrderFood" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="65"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PBG-Gd-AQV">
+                                <rect key="frame" x="10" y="10" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="U06-vd-D4Y"/>
+                                    <constraint firstAttribute="width" constant="45" id="rBI-8Z-Aas"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6RC-6d-P9V">
+                                <rect key="frame" x="65" y="24" width="75" height="17"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6RC-6d-P9V" firstAttribute="leading" secondItem="PBG-Gd-AQV" secondAttribute="trailing" constant="10" id="CYp-7x-1Ih"/>
+                            <constraint firstItem="PBG-Gd-AQV" firstAttribute="top" secondItem="Oob-wR-KX9" secondAttribute="top" constant="10" id="Mc2-Hc-5b0"/>
+                            <constraint firstItem="6RC-6d-P9V" firstAttribute="centerY" secondItem="PBG-Gd-AQV" secondAttribute="centerY" id="RY7-Jy-W2R"/>
+                            <constraint firstAttribute="height" constant="65" id="ZLi-Lu-YSg"/>
+                            <constraint firstItem="PBG-Gd-AQV" firstAttribute="leading" secondItem="Oob-wR-KX9" secondAttribute="leading" constant="10" id="cOZ-hP-tU9"/>
+                            <constraint firstAttribute="width" constant="150" id="ocx-WN-DXb"/>
+                            <constraint firstAttribute="trailing" secondItem="6RC-6d-P9V" secondAttribute="trailing" constant="10" id="pn9-iK-7NQ"/>
+                            <constraint firstAttribute="bottom" secondItem="PBG-Gd-AQV" secondAttribute="bottom" constant="10" id="sme-I5-Zap"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Oob-wR-KX9" secondAttribute="bottom" id="hKs-ek-e0k"/>
+                <constraint firstItem="Oob-wR-KX9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="iBM-9O-NTZ"/>
+                <constraint firstItem="Oob-wR-KX9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oyu-jJ-2Iz"/>
+                <constraint firstAttribute="trailing" secondItem="Oob-wR-KX9" secondAttribute="trailing" id="x2X-sV-fy4"/>
+            </constraints>
+            <size key="customSize" width="150" height="65"/>
+            <connections>
+                <outlet property="categoryLabel" destination="6RC-6d-P9V" id="wzS-9U-r5Q"/>
+                <outlet property="imageView" destination="PBG-Gd-AQV" id="k0d-B1-v9K"/>
+            </connections>
+            <point key="canvasLocation" x="-53.435114503816791" y="-32.04225352112676"/>
+        </collectionViewCell>
+    </objects>
+</document>
